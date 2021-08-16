@@ -1,8 +1,6 @@
 <template>
   <div class="square">
-    <span v-if="value !== ''">
-      {{value}}
-    </span>
+    <span v-if="value !== ''">{{value}}</span>
   </div>
 
 
@@ -11,7 +9,7 @@
 <script>
 
 export default {
-  
+
   name: 'Square',
   props: {
     value: String,
@@ -22,7 +20,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .cell {
+  .square {
     width: 64px;
     height: 64px;
     border: 4px;
